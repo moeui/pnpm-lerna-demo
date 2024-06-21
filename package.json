@@ -1,0 +1,39 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-replace": "^5.0.7",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.11.11",
+    "eslint": "^9.5.0",
+    "husky": "^9.0.11",
+    "lerna": "^8.1.3",
+    "lint-staged": "^15.2.7",
+    "postcss": "^8.1.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1",
+    "vite-plugin-svg-icons": "^2.0.1"
+  },
+  "scripts": {
+    "base": "lerna run --scope main",
+    "dev": "npm run base -- dev",
+    "dev:prod": "npm run base -- dev:prod",
+    "build": "npm run base -- build",
+    "build:testing": "npm run base -- build:testing",
+    "build:production": "npm run base -- build:production",
+    "clean": "lerna run clean",
+    "prettier": "prettier --log-level warn --write '**/*.{ts,tsx,js,jsx,json,md}'"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "recoil": "^0.7.7"
+  }
+}

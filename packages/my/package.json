@@ -1,0 +1,16 @@
+{
+  "name": "my",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development vite --force --host --open",
+    "clean": "rm -rf build && rm -rf dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "4.21.6"
+  }
+}
