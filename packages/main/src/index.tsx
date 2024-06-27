@@ -1,3 +1,4 @@
+import 'reset.css'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
@@ -11,5 +12,5 @@ const root = createRoot(document.getElementById('root')!)
 window.__build_info = __build_info
 
 root.render(
-    <div>{test}</div>
+    <div>{test}  萨法阿斯顿发生</div>
 )

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite --force --host --open",
+    "dev:prod": "cross-env NODE_ENV=production vite --mode production --force --host --open",
     "clean": "rm -rf build && rm -rf dist/"
   },
   "keywords": [],

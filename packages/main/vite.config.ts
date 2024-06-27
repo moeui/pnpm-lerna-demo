@@ -1,5 +1,3 @@
-// import alias from '@rollup/plugin-alias'
-// import commonjs from '@rollup/plugin-commonjs'
 import replace from '@rollup/plugin-replace'
 import react from '@vitejs/plugin-react'
 import autoprefixer from 'autoprefixer'
@@ -10,9 +8,6 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 export default defineConfig({
     plugins: [
-        // alias({
-        //     entries: [{ find: '@', replacement: path.resolve(process.cwd(), 'src') }]
-        // }),
         createSvgIconsPlugin({
             iconDirs: [path.resolve(process.cwd(), 'src/app/components/Icon')],
             symbolId: '[name]'
@@ -30,7 +25,6 @@ export default defineConfig({
                 dev: process.env.NODE_ENV === 'development'
             })
         })
-        // commonjs()
     ],
     css: {
         postcss: {
@@ -51,10 +45,10 @@ export default defineConfig({
         },
         // preprocessorOptions: {
         //     styl: {
-        //         imports: [path.resolve(process.cwd(), 'src/assets/stylus/lib/mixin.styl')]
+        //         imports: [path.resolve(process.cwd(), 'src/assets/stylus/mixin.styl')]
         //     },
         //     stylus: {
-        //         imports: [path.resolve(process.cwd(), 'src/assets/stylus/lib/mixin.styl')]
+        //         imports: [path.resolve(process.cwd(), 'src/assets/stylus/mixin.styl')]
         //     },
         //     less: {
         //         javascriptEnabled: true,
@@ -90,7 +84,7 @@ export default defineConfig({
         port: 3001
         // proxy: {
         //     '/api': {
-        //         target: 'https://api.xxx.game',
+        //         target: process.env.NODE_ENV === 'development'? 'https://dev.api.xxx.game' :'https://api.xxx.game',
         //         changeOrigin: true,
         //         bypass: (req, res) => {
         //             delete req.headers['origin']

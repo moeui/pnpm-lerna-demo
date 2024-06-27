@@ -2,6 +2,7 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
+import { test } from './index'
 
 const root = createRoot(document.getElementById('root')!)
 
@@ -10,5 +11,5 @@ const root = createRoot(document.getElementById('root')!)
 window.__build_info = __build_info
 
 root.render(
-    <div>xxxx</div>
+    <div>{test}</div>
 )
