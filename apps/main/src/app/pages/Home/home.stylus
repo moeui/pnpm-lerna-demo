@@ -1,0 +1,352 @@
+.page-home
+    .allInOn
+        text-align: center
+        height: 622px
+        background: url('./img/home.png') no-repeat center
+        background-size: cover
+        flexCenter()
+
+        @media screen and (max-width: 1280px)
+            height: 367px
+            padding: 0 40px
+
+        .title
+            line-height: 86px
+            font-size: 72px
+            font-weight: 700
+            margin: 0 0 50px
+            letter-spacing: -3.8px
+
+            @media screen and (max-width: 1280px)
+                line-height: 72px
+                text-align: center
+
+        .desc
+            font-size: 24px
+            font-weight: 500
+            color: rgb(136, 136, 136)
+            margin: 0 0 20px
+
+            @media screen and (max-width: 1280px)
+                font-size: 18px
+
+        .btn
+            align-content: center
+            align-items: center
+            background-color: #222
+            border-radius: 8px
+            box-shadow: 0 0.7065919983928324px 0.7065919983928324px -0.625px #00000026, 0 1.8065619053231785px 1.8065619053231785px -1.25px #00000025, 0 3.6217592146567767px 3.6217592146567767px -1.875px #00000023, 0 6.8655999097303715px 6.8655999097303715px -2.5px #00000020, 0 13.646761411524492px 13.646761411524492px -3.125px #0000001b, 0 30px 30px -3.75px #0000000d
+            display: flex
+            flex: none
+            flex-direction: row
+            flex-wrap: nowrap
+            height: 36px
+            justify-content: center
+            overflow: visible
+            padding: 15px
+            position: relative
+            width: 120px
+            color: #fff
+            margin: 0 auto
+
+    .explore
+        display: flex
+
+        @media screen and (max-width: 1280px)
+            flex-direction: column-reverse
+            padding: 0 20px
+
+        &>div
+            flex: 1
+            display: flex
+            align-items: center
+            justify-content: center
+
+        .box
+            width: 400px
+
+            @media screen and (max-width: 1280px)
+                width: 100%
+
+            .title
+                font-size: 50px
+                font-weight: 700
+                padding: 0 0 20px
+
+            .btnWrap
+                display: flex
+
+                .btn
+                    align-content: center
+                    align-items: center
+                    background-color: #222
+                    border-radius: 8px
+                    box-shadow: 0 0.7065919983928324px 0.7065919983928324px -0.625px #00000026, 0 1.8065619053231785px 1.8065619053231785px -1.25px #00000025, 0 3.6217592146567767px 3.6217592146567767px -1.875px #00000023, 0 6.8655999097303715px 6.8655999097303715px -2.5px #00000020, 0 13.646761411524492px 13.646761411524492px -3.125px #0000001b, 0 30px 30px -3.75px #0000000d
+                    display: flex
+                    flex: none
+                    flex-direction: row
+                    flex-wrap: nowrap
+                    height: 40px
+                    justify-content: center
+                    overflow: visible
+                    padding: 15px
+                    position: relative
+                    color: #fff
+                    font-size: 14px
+                    font-weight: 700
+
+                .btn2
+                    align-content: center
+                    align-items: center
+                    background-color: #ebebeb
+                    border-radius: 8px
+                    display: flex
+                    flex: none
+                    flex-direction: row
+                    flex-wrap: nowrap
+                    height: 40px
+                    justify-content: center
+                    overflow: visible
+                    padding: 15px
+                    position: relative
+                    font-size: 14px
+                    font-weight: 700
+                    margin: 0 0 0 15px
+
+        img
+            height: 600px
+
+            @media screen and (max-width: 1280px)
+                width: 100%
+                height: auto
+                margin: 80px 0
+
+    .block
+        display: flex
+        flex-direction: column
+        background-color: #fdfdfd
+        padding: 100px 0
+        margin: 60px 0
+
+        @media screen and (max-width: 1280px)
+            margin: 30px 0
+            padding: 50px 0
+
+        .box
+            background-color: #f2f2f2
+            padding: 30px
+            width: 475px
+            box-sizing: border-box
+
+            @media screen and (max-width: 1280px)
+                width: calc(100% - 40px)
+                margin: 20px 20px 0
+
+            .btn
+                align-content: center
+                align-items: center
+                background-color: #222
+                border-radius: 8px
+                box-shadow: 0 0.7065919983928324px 0.7065919983928324px -0.625px #00000026, 0 1.8065619053231785px 1.8065619053231785px -1.25px #00000025, 0 3.6217592146567767px 3.6217592146567767px -1.875px #00000023, 0 6.8655999097303715px 6.8655999097303715px -2.5px #00000020, 0 13.646761411524492px 13.646761411524492px -3.125px #0000001b, 0 30px 30px -3.75px #0000000d
+                display: inline-flex
+                flex: none
+                flex-direction: row
+                flex-wrap: nowrap
+                height: 40px
+                justify-content: center
+                overflow: visible
+                padding: 15px
+                position: relative
+                color: #fff
+                font-size: 14px
+                font-weight: 700
+
+            .title
+                font-size: 50px
+                font-weight: 700
+
+                @media screen and (max-width: 1280px)
+                    font-size: 32px
+
+            .desc
+                font-size: 24px
+                font-weight: 500
+                color: rgb(136, 136, 136)
+                margin: 20px 0
+
+                @media screen and (max-width: 1280px)
+                    font-size: 18px
+
+        img
+            width: 475px
+
+            @media screen and (max-width: 1280px)
+                width: 100%
+
+        .comprehensive
+            width: 1000px
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+
+            @media screen and (max-width: 1280px)
+                width: 100%
+                flex-direction: column
+
+        .inclusive
+            width: 1000px
+            margin: 20px auto 0
+            display: flex
+            justify-content: space-between
+
+            @media screen and (max-width: 1280px)
+                width: 100%
+                flex-direction: column-reverse
+
+    .trusted
+        width: 1000px
+        margin: 0 auto
+
+        @media screen and (max-width: 1280px)
+            width: 100%
+
+        .title
+            font-size: 50px
+            font-weight: 700
+            margin: 0 0 60px
+            text-align: center
+
+            @media screen and (max-width: 1280px)
+                font-size: 32px
+
+        .box
+            display: flex
+            justify-content: center
+            margin: 0 0 60px
+
+            @media screen and (max-width: 1280px)
+                display: grid
+                grid-template-columns: 1fr 1fr
+
+            img
+                width: 136px
+
+                @media screen and (max-width: 1280px)
+                    margin: 0 auto 20px
+
+    .faq
+        width: 1000px
+        margin: 0 auto
+        padding: 50px 0
+
+        @media screen and (max-width: 1280px)
+            width: 100%
+
+        .title
+            font-size: 50px
+            font-weight: 700
+            margin: 0 0 60px
+            text-align: center
+
+            @media screen and (max-width: 1280px)
+                font-size: 32px
+
+        .list
+            background: rgb(247, 247, 247)
+            border-radius: 20px
+            padding: 24px
+
+            @media screen and (max-width: 1280px)
+                margin: 0 20px
+
+            .item
+                &:not(:last-child)
+                    border-bottom: 1px solid rgba(#000, 0.07)
+                    margin: 0 0 24px
+                    padding: 0 0 24px
+
+                .tit
+                    display: flex
+                    align-items: center
+                    cursor: pointer
+
+                    &>div
+                        font-size: 18px
+                        font-weight: 600
+                        margin: 0 0 0 24px
+
+                    .icon
+                        width: 16px
+                        height: 16px
+                        color: rgba(#000, 0.2)
+                        transition: transform 0.1s
+
+                .desc
+                    color: rgb(102, 102, 102)
+                    font-size: 16px
+                    font-weight: 500
+                    transition: all 0.1s
+                    height: 0
+                    overflow: hidden
+                    opacity: 0
+                    padding: 0 40px
+
+                &.open
+                    .tit
+                        .icon
+                            transform: rotate(45deg)
+
+                    .desc
+                        height: auto
+                        padding: 24px 40px 0
+                        opacity: 1
+
+    .sign
+        width: 1000px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 50px
+
+        @media screen and (max-width: 1280px)
+            width: 100%
+
+        .title
+            font-size: 50px
+            font-weight: 700
+            margin: 0 0 30px
+            text-align: center
+
+            @media screen and (max-width: 1280px)
+                font-size: 32px
+
+        .btn
+            align-content: center
+            align-items: center
+            background-color: #222
+            border-radius: 8px
+            box-shadow: 0 0.7065919983928324px 0.7065919983928324px -0.625px #00000026, 0 1.8065619053231785px 1.8065619053231785px -1.25px #00000025, 0 3.6217592146567767px 3.6217592146567767px -1.875px #00000023, 0 6.8655999097303715px 6.8655999097303715px -2.5px #00000020, 0 13.646761411524492px 13.646761411524492px -3.125px #0000001b, 0 30px 30px -3.75px #0000000d
+            display: flex
+            flex: none
+            flex-direction: row
+            flex-wrap: nowrap
+            height: 36px
+            justify-content: center
+            overflow: visible
+            padding: 15px
+            position: relative
+            width: 108px
+            color: #fff
+            margin: 0 auto
+
+    .footer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 50px
+        font-size: 14px
+
+        .icon
+            width: 30px
+            height: 30px

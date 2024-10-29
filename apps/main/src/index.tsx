@@ -1,16 +1,19 @@
 import 'reset.css'
-import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
-import { App } from 'my'
-import { useWindowSize } from 'hooks'
+import AppRouter from '@src/app/router'
+
 const root = createRoot(document.getElementById('root')!)
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-expect-error
-window.__build_info = __build_info
+// // @ts-expect-error
+// window.__build_info = __build_info
 
 root.render(
-    <div><App />  萨法阿斯顿发生</div>
+    <RecoilRoot>
+        <BrowserRouter>
+            <AppRouter />
+        </BrowserRouter>
+    </RecoilRoot>
 )

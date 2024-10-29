@@ -1,0 +1,6 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "vite": true,
+  "project": ["**/*.{js,ts,tsx}", "!scripts/*.{js,ts}", "!dist/**/*.{js}"],
+  "ignoreExportsUsedInFile": true
+}
