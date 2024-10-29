@@ -11,5 +11,5 @@ const root = createRoot(document.getElementById('root')!)
 window.__build_info = __build_info
 
 root.render(
-    <div>{test}</div>
+    <div className='text'>{test}</div>
 )
