@@ -6,14 +6,15 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite --force --host --open",
     "dev:prod": "cross-env NODE_ENV=production vite --mode production --force --host --open",
+    "build": "vite build --mode production",
     "clean": "rm -rf dist && rm -rf node_modules"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "antd": "4.21.6",
-    "my": "workspace:*",
+    "antd": "^5.21.6",
+    "hooks": "workspace:*",
     "comps": "workspace:*"
   }
 }

@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite --force --host --open",
+    "build": "vite build --mode production",
     "clean": "rm -rf dist && rm -rf node_modules"
   },
   "keywords": [],
